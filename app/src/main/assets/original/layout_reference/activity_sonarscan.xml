@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:keepScreenOn="true">
+        <com.lugatek.thubanlodestar.widgets.LineGraphView android:id="@id/lineGraphView" android:background="@drawable/background_border" android:layout_width="0.0dip" android:layout_height="120.0dip" android:layout_marginTop="5.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.lugatek.thubanlodestar.widgets.opengl.ModelSurfaceView android:id="@id/mGLView" android:background="@drawable/background_border" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:layout_constraintBottom_toTopOf="@id/colorSelectSpinner" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_min="120.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/lineGraphView" />
+        <Spinner android:id="@id/colorSelectSpinner" android:layout_width="fill_parent" android:layout_marginBottom="5.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/Widget.App.Spinner" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
